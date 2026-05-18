@@ -59,16 +59,16 @@
             this.txtnome = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtcodigo = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btnNovo = new System.Windows.Forms.Button();
+            this.codigo = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabelaCliente = new System.Windows.Forms.DataGridView();
+            this.btnPesquisar = new System.Windows.Forms.Button();
+            this.txtpesquisa = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.btnNovo = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
-            this.txtpesquisa = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.btnPesquisar = new System.Windows.Forms.Button();
-            this.tabelaCliente = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.tabelaClientes.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -137,7 +137,7 @@
             this.tabPage2.Controls.Add(this.txtnome);
             this.tabPage2.Controls.Add(this.label3);
             this.tabPage2.Controls.Add(this.txtcodigo);
-            this.tabPage2.Controls.Add(this.label2);
+            this.tabPage2.Controls.Add(this.codigo);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -423,27 +423,16 @@
             this.txtcodigo.Size = new System.Drawing.Size(100, 22);
             this.txtcodigo.TabIndex = 1;
             // 
-            // label2
+            // codigo
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label2.Location = new System.Drawing.Point(2, 27);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 20);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Código:";
-            // 
-            // btnNovo
-            // 
-            this.btnNovo.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnNovo.ForeColor = System.Drawing.Color.White;
-            this.btnNovo.Location = new System.Drawing.Point(142, 520);
-            this.btnNovo.Name = "btnNovo";
-            this.btnNovo.Size = new System.Drawing.Size(110, 58);
-            this.btnNovo.TabIndex = 28;
-            this.btnNovo.Text = "Novo\r\n";
-            this.btnNovo.UseVisualStyleBackColor = false;
+            this.codigo.AutoSize = true;
+            this.codigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.codigo.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.codigo.Location = new System.Drawing.Point(2, 27);
+            this.codigo.Name = "codigo";
+            this.codigo.Size = new System.Drawing.Size(66, 20);
+            this.codigo.TabIndex = 0;
+            this.codigo.Text = "Código:";
             // 
             // tabPage1
             // 
@@ -458,38 +447,29 @@
             this.tabPage1.Text = "Consulta";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // btnSalvar
+            // tabelaCliente
             // 
-            this.btnSalvar.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnSalvar.ForeColor = System.Drawing.Color.White;
-            this.btnSalvar.Location = new System.Drawing.Point(317, 520);
-            this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(110, 58);
-            this.btnSalvar.TabIndex = 30;
-            this.btnSalvar.Text = "Salvar";
-            this.btnSalvar.UseVisualStyleBackColor = false;
+            this.tabelaCliente.AllowUserToAddRows = false;
+            this.tabelaCliente.AllowUserToDeleteRows = false;
+            this.tabelaCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tabelaCliente.Location = new System.Drawing.Point(15, 68);
+            this.tabelaCliente.Name = "tabelaCliente";
+            this.tabelaCliente.ReadOnly = true;
+            this.tabelaCliente.RowHeadersWidth = 51;
+            this.tabelaCliente.RowTemplate.Height = 24;
+            this.tabelaCliente.Size = new System.Drawing.Size(973, 271);
+            this.tabelaCliente.TabIndex = 30;
             // 
-            // btnExcluir
+            // btnPesquisar
             // 
-            this.btnExcluir.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnExcluir.ForeColor = System.Drawing.Color.White;
-            this.btnExcluir.Location = new System.Drawing.Point(495, 520);
-            this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(115, 58);
-            this.btnExcluir.TabIndex = 31;
-            this.btnExcluir.Text = "Excluir";
-            this.btnExcluir.UseVisualStyleBackColor = false;
-            // 
-            // btnEditar
-            // 
-            this.btnEditar.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnEditar.ForeColor = System.Drawing.Color.White;
-            this.btnEditar.Location = new System.Drawing.Point(677, 520);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(130, 58);
-            this.btnEditar.TabIndex = 32;
-            this.btnEditar.Text = "Editar";
-            this.btnEditar.UseVisualStyleBackColor = false;
+            this.btnPesquisar.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnPesquisar.ForeColor = System.Drawing.Color.White;
+            this.btnPesquisar.Location = new System.Drawing.Point(525, 23);
+            this.btnPesquisar.Name = "btnPesquisar";
+            this.btnPesquisar.Size = new System.Drawing.Size(110, 34);
+            this.btnPesquisar.TabIndex = 29;
+            this.btnPesquisar.Text = "Pesquisar";
+            this.btnPesquisar.UseVisualStyleBackColor = false;
             // 
             // txtpesquisa
             // 
@@ -509,29 +489,51 @@
             this.label16.TabIndex = 4;
             this.label16.Text = "Nome:";
             // 
-            // btnPesquisar
+            // btnNovo
             // 
-            this.btnPesquisar.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnPesquisar.ForeColor = System.Drawing.Color.White;
-            this.btnPesquisar.Location = new System.Drawing.Point(525, 23);
-            this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(110, 34);
-            this.btnPesquisar.TabIndex = 29;
-            this.btnPesquisar.Text = "Pesquisar";
-            this.btnPesquisar.UseVisualStyleBackColor = false;
+            this.btnNovo.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnNovo.ForeColor = System.Drawing.Color.White;
+            this.btnNovo.Location = new System.Drawing.Point(142, 520);
+            this.btnNovo.Name = "btnNovo";
+            this.btnNovo.Size = new System.Drawing.Size(110, 58);
+            this.btnNovo.TabIndex = 28;
+            this.btnNovo.Text = "Novo\r\n";
+            this.btnNovo.UseVisualStyleBackColor = false;
             // 
-            // tabelaCliente
+            // btnSalvar
             // 
-            this.tabelaCliente.AllowUserToAddRows = false;
-            this.tabelaCliente.AllowUserToDeleteRows = false;
-            this.tabelaCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tabelaCliente.Location = new System.Drawing.Point(15, 68);
-            this.tabelaCliente.Name = "tabelaCliente";
-            this.tabelaCliente.ReadOnly = true;
-            this.tabelaCliente.RowHeadersWidth = 51;
-            this.tabelaCliente.RowTemplate.Height = 24;
-            this.tabelaCliente.Size = new System.Drawing.Size(973, 271);
-            this.tabelaCliente.TabIndex = 30;
+            this.btnSalvar.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnSalvar.ForeColor = System.Drawing.Color.White;
+            this.btnSalvar.Location = new System.Drawing.Point(317, 520);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(117, 58);
+            this.btnSalvar.TabIndex = 30;
+            this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.UseVisualStyleBackColor = false;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
+            // 
+            // btnExcluir
+            // 
+            this.btnExcluir.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnExcluir.ForeColor = System.Drawing.Color.White;
+            this.btnExcluir.Location = new System.Drawing.Point(495, 520);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(125, 58);
+            this.btnExcluir.TabIndex = 31;
+            this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.UseVisualStyleBackColor = false;
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnEditar.ForeColor = System.Drawing.Color.White;
+            this.btnEditar.Location = new System.Drawing.Point(677, 520);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(130, 58);
+            this.btnEditar.TabIndex = 32;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = false;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // FrmCadastroClientes
             // 
@@ -567,7 +569,7 @@
         private System.Windows.Forms.TextBox txtnome;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtcodigo;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label codigo;
         private System.Windows.Forms.TextBox txtemail;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.MaskedTextBox txtcpf;
