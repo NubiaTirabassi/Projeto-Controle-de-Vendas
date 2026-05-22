@@ -115,6 +115,7 @@
     <Compile Include="br.com.projeto.conexaoDB\ConnectionFactory.cs" />
     <Compile Include="br.com.projeto.dao\ClienteDAO.cs" />
     <Compile Include="br.com.projeto.dao\FornecedorDAO.cs" />
+    <Compile Include="br.com.projeto.dao\FuncionarioDAO.cs" />
     <Compile Include="br.com.projeto.model\Cliente.cs" />
     <Compile Include="br.com.projeto.model\Fornecedor.cs" />
     <Compile Include="br.com.projeto.model\Funcionario.cs" />
@@ -127,6 +128,54 @@
     </Compile>
     <Compile Include="br.com.projeto.view\FrmCadastroClientes.Designer.cs">
       <DependentUpon>FrmCadastroClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="br.com.projeto.view\Frmclientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="br.com.projeto.view\Frmclientes.Designer.cs">
+      <DependentUpon>Frmclientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="br.com.projeto.view\Frmfornecedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="br.com.projeto.view\Frmfornecedores.Designer.cs">
+      <DependentUpon>Frmfornecedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="br.com.projeto.view\Frmfuncionarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="br.com.projeto.view\Frmfuncionarios.Designer.cs">
+      <DependentUpon>Frmfuncionarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="br.com.projeto.view\Frmhistorico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="br.com.projeto.view\Frmhistorico.Designer.cs">
+      <DependentUpon>Frmhistorico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="br.com.projeto.view\Frmlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="br.com.projeto.view\Frmlogin.Designer.cs">
+      <DependentUpon>Frmlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="br.com.projeto.view\FrmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="br.com.projeto.view\FrmMenu.Designer.cs">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="br.com.projeto.view\Frmprodutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="br.com.projeto.view\Frmprodutos.Designer.cs">
+      <DependentUpon>Frmprodutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="br.com.projeto.view\Frmvendas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="br.com.projeto.view\Frmvendas.Designer.cs">
+      <DependentUpon>Frmvendas.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
