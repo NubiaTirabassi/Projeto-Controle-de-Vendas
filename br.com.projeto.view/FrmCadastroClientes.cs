@@ -28,6 +28,13 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
         {
 
         }
+        private void FrmCadastroClientes_Load(object sender, EventArgs e)
+        {
+            tabelaCliente.DefaultCellStyle.ForeColor = Color.Black;
+            ClienteDAO dao = new ClienteDAO();
+            tabelaCliente.DataSource = dao.listarClientes();
+
+        }
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
