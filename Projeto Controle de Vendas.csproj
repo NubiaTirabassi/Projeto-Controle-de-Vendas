@@ -114,7 +114,14 @@
   <ItemGroup>
     <Compile Include="br.com.projeto.conexaoDB\ConnectionFactory.cs" />
     <Compile Include="br.com.projeto.dao\ClienteDAO.cs" />
+    <Compile Include="br.com.projeto.dao\FornecedorDAO.cs" />
     <Compile Include="br.com.projeto.model\Cliente.cs" />
+    <Compile Include="br.com.projeto.model\Fornecedor.cs" />
+    <Compile Include="br.com.projeto.model\Funcionario.cs" />
+    <Compile Include="br.com.projeto.model\Helpers.cs" />
+    <Compile Include="br.com.projeto.model\ItemVendacs.cs" />
+    <Compile Include="br.com.projeto.model\Produto.cs" />
+    <Compile Include="br.com.projeto.model\Venda.cs" />
     <Compile Include="br.com.projeto.view\FrmCadastroClientes.cs">
       <SubType>Form</SubType>
     </Compile>
